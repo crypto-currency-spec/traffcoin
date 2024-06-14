@@ -7,10 +7,10 @@
 
   padding-inline: 20px;
   padding-top: 50px;
-  gap: 30px;
 
   @include onTablet {
     padding-inline: 34px;
+    gap: 30px;
   }
 
   @include onBigTablet {
@@ -21,8 +21,8 @@
 
   &__image {
     background-image: url(../../../public/images/coins.png);
-    height: 80vw;
-    width: 90vw;
+    height: 70vw;
+    width: 80vw;
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
   }
   
   &__title {
-    @include text(32px, 700, #0A1128);
+    @include text(24px, 700, #0A1128);
     text-align: center;
     margin-top: 0;
 
@@ -58,7 +58,7 @@
   }
 
   &__text {
-    @include text(20px, 400, #0A1128);
+    @include text(16px, 400, #0A1128);
     text-align: center;
 
     @include onTablet {

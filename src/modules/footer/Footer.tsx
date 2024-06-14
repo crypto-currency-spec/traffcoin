@@ -3,7 +3,7 @@ export const Footer = () => {
 
   return (
     <section className="footer">
-      <a href="https://www.telegram.com">
+      <a href="https://t.me/traffcoin" target="_blank" rel="noreferrer">
         <div className="icon-left" />
       </a>
 

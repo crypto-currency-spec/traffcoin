@@ -6,9 +6,6 @@ export const VideoReviews = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
 
   const videos = [
-    "https://www.youtube.com/embed/flf1DZuC-VE?si=aP9FZ4RPIG_veXNr",
-    "https://www.youtube.com/embed/CQADIPpd_Cs?si=lzpRSTYw3a_psFNj",
-    "https://www.youtube.com/embed/2-0Tw-bg-6s?si=zwZxExx3oRzfYV0P",
     "images/video-reviews/video-1.mp4",
     "images/video-reviews/video-2.mp4",
     "images/video-reviews/video-3.mp4",

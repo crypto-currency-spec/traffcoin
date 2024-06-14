@@ -80,7 +80,7 @@
   &__text {
     text-align: center;
 
-    @include text(24px, 400, #0A1128);
+    @include text(16px, 400, #0A1128);
 
     @include onTablet {
       font-size: 32px;
