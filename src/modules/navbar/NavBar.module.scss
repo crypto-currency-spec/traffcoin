@@ -1,0 +1,24 @@
+.navbar {
+  padding-inline: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100vw;
+  height: 80px;
+
+  background-color: #0A1128;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  @include onTablet {
+    padding-inline: 35px;
+    height: 100px;
+  }
+
+  @include onBigTablet {
+    padding-inline: 65px;
+    height: 120px;
+  }
+}

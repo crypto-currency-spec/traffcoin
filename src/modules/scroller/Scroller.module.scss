@@ -1,0 +1,56 @@
+.scroller {
+  width: 80vw;
+  max-width: 80vw;
+
+  align-self: center;
+
+  &__image {
+    width: 65vw;
+    height: 150vw;
+
+    object-fit: contain;
+    border-radius: 50px;
+
+    @include onBigTablet {
+      height: 90vw;
+    }
+
+    @include onDesktop {
+      height: 60vw;
+    }
+  }
+}
+
+.slick-arrow {
+  z-index: 100;
+  position: absolute;
+
+  &::before {
+    display: none;
+  }
+}
+
+.slick-prev {
+  left: -1% !important;
+
+  @include onTablet {
+    left: -8% !important;
+  }
+}
+
+.slick-next {
+  right: 7% !important;
+
+  @include onTablet {
+    right: 7px !important;
+  }
+}
+
+.next-slick-arrow {
+  @include arrow;
+  position: absolute;
+
+  &--right {
+    transform: rotate(180deg);
+  }
+}

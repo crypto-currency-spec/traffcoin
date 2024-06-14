@@ -1,0 +1,102 @@
+.question {
+  padding-inline: 15px;
+  
+  max-width: 90vw;
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background-color: #0A1128;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  &__arrow {
+    --value: 24px;
+
+    height: var(--value);
+    width: var(--value);
+
+    min-height: var(--value);
+    min-width: var(--value);
+
+    background-image: url(../../../public/images/icons/questions-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      transform: rotate(180deg);
+    }
+
+    @include onTablet {
+      --value: 32px;
+    }
+
+    @include onBigTablet {
+      --value: 48px;
+    }
+  }
+
+  &__text {
+    @include text(16px, 500, #FFF);
+
+    margin-block: 15px;
+    text-align: left;
+
+    @include onTablet {
+      font-size: 24px;
+    }
+
+    @include onBigTablet {
+      font-size: 32px;
+    }
+  }
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.answer {
+  margin: 0;
+
+  text-align: left;
+  max-width: 70vw;
+
+  padding: 30px 30px;
+  background-color: #001F54;
+
+  border-bottom-right-radius: 50px;
+
+  animation: appear .4s ease-in-out forwards;
+  transform-origin: top;
+
+  z-index: 100;
+
+  @include text(14px, 500, #FFF);
+
+  @include onTablet {
+    font-size: 20px;
+    top: 75px;
+  }
+
+  @include onBigTablet {
+    font-size: 28px;
+    top: 80px;
+  }
+}
+
+@keyframes appear {
+  from { opacity: .7; transform: translateY(-50%) }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.turned {
+  transform: rotate(180deg);
+}

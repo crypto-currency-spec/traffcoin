@@ -1,0 +1,64 @@
+@mixin onMobile() {
+  @media (max-width: 639px) {
+    @content;
+  }
+}
+
+@mixin onTablet() {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin onBigTablet() {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onDesktop() {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin text($fontSize, $fontWeight, $color) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+}
+
+@mixin addPadding() {
+  padding-inline: 20px;
+
+  @include onTablet {
+    padding-inline: 34px;
+  }
+
+  @include onDesktop() {
+    padding-inline: 120px;
+  }
+}
+
+@mixin arrow () {
+  --arrow-size: 48px;
+
+  background-image: url(../../../public/images/icons/reviews-arrow.svg);
+
+  height: var(--arrow-size);
+  width: var(--arrow-size);
+
+  min-height: var(--arrow-size);
+  min-width: var(--arrow-size);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include onTablet {
+    --arrow-size: 80px;
+  }
+
+  @include onBigTablet {
+    --arrow-size: 100px;
+  }
+}

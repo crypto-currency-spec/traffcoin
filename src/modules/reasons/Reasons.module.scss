@@ -1,0 +1,128 @@
+.reasons {
+  @include addPadding;
+  margin-top: 100px;
+
+  @include onTablet {
+    margin-top: 150px;
+  }
+
+  @include onBigTablet {
+    margin-top: 200px;
+  }
+
+  &__title {
+    @include text(38px, 700, #0A1128);
+    text-align: center;
+
+    @include onTablet {
+      font-size: 56px;
+    }
+
+    @include onBigTablet {
+      font-size: 80px;
+    }
+  }
+
+  &__reasons {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    align-items: center;
+
+    margin-top: 50px;
+
+    @include onTablet {
+      margin-top: 100px;
+    }
+
+    @include onBigTablet {
+      margin-top: 150px;
+      gap: 0;
+    }
+  }
+
+  &__conclusion {
+    margin-top: 70px;
+    text-align: center;
+
+    @include text(32px, 700, #001F54);
+
+    @include onTablet {
+      margin-top: 100px;
+      font-size: 38px;
+    }
+
+    @include onBigTablet {
+      font-size: 52px;
+    }
+  }
+}
+
+.reason {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 500px;
+
+  gap: 15px;
+
+  @include onBigTablet {
+    align-self: flex-end;
+
+    &:nth-child(2n + 1) {
+      align-self: flex-start;
+    }
+  }
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 150px;
+    width: 150px;
+
+    background-color: #0A1128;
+    border-radius: 50%;
+    border: 10px solid #9AB6E9;
+    
+
+    @include text(100px, 500, #FFF);
+
+    @include onTablet {
+      height: 200px;
+      width: 200px;
+
+      font-size: 120px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    text-align: center;
+
+    @include text(56px, 500, #000);
+  }
+  
+  &__description {
+    margin: 0;
+    text-align: center;
+
+    @include text(24px, 200, #000);
+
+    @include onTablet {
+      font-size: 32px;
+    }
+  }
+}
+
+.reason-visible {
+  animation: moveUp .7s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+  from { opacity: .7; transform: translateY(50%) };
+  to { opacity: 1; }
+}

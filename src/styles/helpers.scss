@@ -1,0 +1,72 @@
+.icon-left {
+  background-image: url(../../public/images/icons/telegram-icon.svg);
+}
+
+.logo {
+  background-image: url(../../public/images/icons/logo.svg);
+  height: 48px;
+  width: 170px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include onTablet {
+    height: 100px;
+    width: 300px;
+  }
+}
+
+.menu-icon {
+  background-image: url(../../public/images/icons/menu.svg);
+  cursor: pointer;
+}
+
+.arrow-up {
+  background-image: url(../../public/images/icons/footer-arrow-up.svg);
+  cursor: pointer;
+}
+
+.icon-left, .menu-icon, .arrow-up {
+  height: 38px;
+  width: 38px;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include onTablet {
+    height: 64px;
+    width: 64px;
+  }
+
+  @include onBigTablet {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+main > section {
+  margin-bottom: 100px;
+
+  @include onTablet() {
+    margin-bottom: 150px;
+  }
+
+  @include onBigTablet() {
+    margin-bottom: 200px;
+  }
+}
+
+.title {
+  margin-top: 0;
+
+  @include text(38px, 700, #000);
+
+  @include onTablet {
+    font-size: 56px;
+  }
+
+  @include onBigTablet {
+    font-size: 80px;
+  }
+}
+

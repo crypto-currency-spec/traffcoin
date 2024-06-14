@@ -1,0 +1,93 @@
+.partners {
+  @include addPadding;
+  display: flex;
+  flex-direction: column;
+
+  // for now
+  // align-items: center;
+
+  gap: 30px;
+
+  @include onTablet {
+    gap: 100px;
+  }
+
+  &__rows {
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: clip;
+
+    gap: 70px;
+
+    @include onTablet {
+      gap: 100px;
+    }
+
+    @include onBigTablet {
+      gap: 150px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 50px;
+    width: fit-content;
+
+    animation: moveLeft 30s linear infinite;
+
+    @include onTablet {
+      gap: 100px;
+    }
+
+    @include onBigTablet {
+      gap: 150px;
+    }
+
+    &--2 {
+      animation: moveRight 30s linear infinite;
+      align-self: flex-end;
+    }
+  }
+
+  &__partner {
+    width: 35vw !important;
+    height: 7vw;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include onTablet {
+      width: 20vw !important;
+      height: 4vw;
+    }
+
+    @for $partner from 1 through 24 {
+      &--#{$partner} {
+        background-image: url('../../../public/images/partners/p#{$partner}.png');
+      }
+    }
+  }
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+
+  @include onTablet {
+    gap: 100px;
+  }
+
+  @include onBigTablet {
+    gap: 150px;
+  }
+}
+
+@keyframes moveLeft {
+  to { transform: translateX(-100%); }
+}
+
+@keyframes moveRight {
+  to { transform: translateX(100%); }
+}

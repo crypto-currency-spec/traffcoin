@@ -1,0 +1,49 @@
+.payment-systems {
+  @include addPadding;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  @include onTablet {
+    gap: 100px;
+  }
+
+  &__systems {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 50px;
+
+    @include onTablet {
+      gap: 100px;
+      justify-content: space-between;
+    }
+  }
+
+  &__system {
+    width: 20vw;
+    height: 12vw;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include onTablet {
+      width: 18vw;
+      height: 10vw;
+    }
+
+    @include onBigTablet {
+      width: 16vw;
+      height: 7vw;
+    }
+
+    @for $system from 1 through 12 {
+      &--#{$system} {
+        background-image: url('../../../public/images/payment-systems/s#{$system}.svg');
+      }
+    }
+  }
+}

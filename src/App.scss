@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+
+@import './styles/mixins';
+@import './styles/variables';
+@import './styles/helpers';
+
+@import './modules/faq/Faq.module';
+@import './modules/footer/Footer.module';
+@import './modules/header/Header.module';
+@import './modules/menu/Menu.module';
+@import './modules/more-reasons/MoreReasons.module';
+@import './modules/navbar/NavBar.module';
+@import './modules/partners/Partners.module';
+@import './modules/payment-systems/PaymentSystems.module';
+@import './modules/reasons/Reasons.module';
+@import './modules/reviews/Reviews.module';
+@import './modules/video-reviews/VideoReviews.module';
+@import './modules/scroller/Scroller.module';
+@import './modules/question/Question.module.scss';
+
+* {
+  box-sizing: border-box;
+}

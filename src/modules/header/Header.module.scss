@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-around;
+
+  padding-inline: 20px;
+  padding-top: 50px;
+  gap: 30px;
+
+  @include onTablet {
+    padding-inline: 34px;
+  }
+
+  @include onBigTablet {
+    padding-top: 100px;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  &__image {
+    background-image: url(../../../public/images/coins.png);
+    height: 80vw;
+    width: 90vw;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include onBigTablet {
+      height: 40vw;
+      width: 40vw;
+    }
+  }
+
+  &__right-group {
+    display: flex;
+    flex-direction: column;
+
+    @include onBigTablet {
+      max-width: 40vw;
+    }
+  }
+  
+  &__title {
+    @include text(32px, 700, #0A1128);
+    text-align: center;
+    margin-top: 0;
+
+    @include onTablet {
+      font-size: 38px;
+    }
+
+    @include onBigTablet {
+      font-size: 32px;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    @include text(20px, 400, #0A1128);
+    text-align: center;
+
+    @include onTablet {
+      font-size: 24px;
+    }
+
+    @include onBigTablet {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: center;
+
+    margin-top: 30px;
+
+    height: 100px;
+    width: 80vw;
+
+    max-width: 400px;
+    background-color: #001F54;
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    @include text(32px, 700, #FFF);
+
+    @include onTablet {
+      font-size: 38px;
+    }
+
+    @include onBigTablet {
+      align-self: unset;
+    }
+  }
+}
