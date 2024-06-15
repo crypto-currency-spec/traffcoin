@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/traffcoin/static/css/main.2f53a470.css",
-    "main.js": "/traffcoin/static/js/main.aeb4f0e1.js",
+    "main.js": "/traffcoin/static/js/main.c915a37a.js",
     "static/js/453.cdd3c89a.chunk.js": "/traffcoin/static/js/453.cdd3c89a.chunk.js",
     "static/media/coins.png": "/traffcoin/static/media/coins.eb7caa15ed7764ff2bcf.png",
     "static/media/p9.png": "/traffcoin/static/media/p9.5d4d2a6e007d9f6a2441.png",
@@ -62,11 +62,11 @@
     "static/media/more-reasons-2.svg": "/traffcoin/static/media/more-reasons-2.edc56f076ba739c582b0.svg",
     "static/media/telegram-icon.svg": "/traffcoin/static/media/telegram-icon.1ff4d7e6e796b26fffd1.svg",
     "main.2f53a470.css.map": "/traffcoin/static/css/main.2f53a470.css.map",
-    "main.aeb4f0e1.js.map": "/traffcoin/static/js/main.aeb4f0e1.js.map",
+    "main.c915a37a.js.map": "/traffcoin/static/js/main.c915a37a.js.map",
     "453.cdd3c89a.chunk.js.map": "/traffcoin/static/js/453.cdd3c89a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f53a470.css",
-    "static/js/main.aeb4f0e1.js"
+    "static/js/main.c915a37a.js"
   ]
 }
