@@ -14,7 +14,7 @@ export const Partners = () => {
 
   const settings = {
     dots: false,
-    speed: 7000,
+    speed: 5000,
     slidesToShow: slidesCount,
     slidesToScroll: 2,
     autoplay: true,
