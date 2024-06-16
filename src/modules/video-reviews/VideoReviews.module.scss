@@ -20,6 +20,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include onTablet {
+      justify-content: space-between;
+    }
   }
 
   &__arrow {
