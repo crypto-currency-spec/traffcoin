@@ -12,7 +12,7 @@ export const Header = () => {
 
         <p className="header__text">{data.header.subtitle}</p>
 
-        <a href="https://www.telegram.com" className="header__button">{data.header.button}</a>
+        <a href="https://t.me/traffcoin" className="header__button">{data.header.button}</a>
       </div>
 
     </section>
