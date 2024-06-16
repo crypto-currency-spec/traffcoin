@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f254799.css",
+    "main.css": "/static/css/main.e6f4cff3.css",
     "main.js": "/static/js/main.007acabc.js",
     "static/js/453.cdd3c89a.chunk.js": "/static/js/453.cdd3c89a.chunk.js",
-    "static/media/coins.png": "/static/media/coins.4e9d2d82bf2af900b3ff.png",
     "static/media/p9.png": "/static/media/p9.5d4d2a6e007d9f6a2441.png",
     "static/media/p11.png": "/static/media/p11.ec79b86ae9db9efbb1d8.png",
     "static/media/p10.png": "/static/media/p10.6099c823a3ddb68d7304.png",
@@ -25,6 +24,7 @@
     "static/media/s5.svg": "/static/media/s5.d40c15f83e348cd35c76.svg",
     "static/media/p2.png": "/static/media/p2.20c9fb3331a87f768a4e.png",
     "static/media/s2.svg": "/static/media/s2.168839032253f5c7fb68.svg",
+    "static/media/coins.webp": "/static/media/coins.c829806db12b4f2552a4.webp",
     "static/media/p14.png": "/static/media/p14.0cd854637129e078d871.png",
     "static/media/p18.png": "/static/media/p18.39997613609f1687aa39.png",
     "static/media/p20.png": "/static/media/p20.9888178377bf66a00011.png",
@@ -61,12 +61,12 @@
     "static/media/questions-arrow.svg": "/static/media/questions-arrow.da012187ecf57978cfbb.svg",
     "static/media/more-reasons-2.svg": "/static/media/more-reasons-2.edc56f076ba739c582b0.svg",
     "static/media/telegram-icon.svg": "/static/media/telegram-icon.1ff4d7e6e796b26fffd1.svg",
-    "main.2f254799.css.map": "/static/css/main.2f254799.css.map",
+    "main.e6f4cff3.css.map": "/static/css/main.e6f4cff3.css.map",
     "main.007acabc.js.map": "/static/js/main.007acabc.js.map",
     "453.cdd3c89a.chunk.js.map": "/static/js/453.cdd3c89a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f254799.css",
+    "static/css/main.e6f4cff3.css",
     "static/js/main.007acabc.js"
   ]
 }
