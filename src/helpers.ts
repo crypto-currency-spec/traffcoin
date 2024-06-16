@@ -1,3 +1,11 @@
-export const loadText = (language: 'eng' | null) => {
-  return fetch(`data/${language === 'eng' ? 'eng' : 'rus'}.json`).then(res => res.json());
+export const generateRowElements = (start: number, end: number) => {
+  let result = [];
+
+  for (let i = start; i <= end; i++) {
+    result.push(i);
+  }
+
+  result.push(...result);
+
+  return result;
 };

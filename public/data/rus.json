@@ -12,7 +12,7 @@
       },
       {
         "link": "#video-reviews",
-        "text": "Видео-отзывы"
+        "text": "Видеоотзывы"
       },
       {
         "link": "#partners",
@@ -76,7 +76,7 @@
     "title": "Отзывы"
   },
   "videoReviews": {
-    "title": "Видео-отзывы"
+    "title": "Видеоотзывы"
   },
   "partners": {
     "title": "БИРЖИ"

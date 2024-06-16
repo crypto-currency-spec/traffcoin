@@ -8,11 +8,6 @@ interface Props {
   files: string[];
 }
 
-// fix this
-const isVideo = (file: string) => {
-  return file[0] === 'h';
-};
-
 export const Scroller: React.FC<Props> = ({ files }) => {
   const settings = {
     dots: false,
@@ -37,13 +32,13 @@ export const Scroller: React.FC<Props> = ({ files }) => {
     <div className="scroller">
       <Slider {...settings}>
         {files.map((file, i) => (
-          isVideo(file) ? (
-            <video className="scroller__image" autoPlay>
-              <source src={file} type="video/mp4" />
-            </video>
-          ) : (
-            <img className="scroller__image" src={file} alt={`review-${i + 1}`} key={i} />
-          )
+          <img
+            className="scroller__image"
+            src={file}
+            loading="lazy"
+            alt={`review-${i + 1}`}
+            key={i}
+          />
         ))}
       </Slider>
     </div>

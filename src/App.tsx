@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
 import { updateData } from './store/data';
-import { loadText } from './helpers';
 import { useAppDispatch } from './store/hooks';
 import { NavBar } from './modules/navbar';
 import { Header } from './modules/header';
@@ -13,6 +12,7 @@ import { Partners } from './modules/partners';
 import { PaymentSystems } from './modules/payment-systems';
 import { Faq } from './modules/faq';
 import { Footer } from './modules/footer';
+import { loadText } from './languageConversion';
 
 function App() {
   const [language, setLanguage] = useState<'eng' | null>(null);

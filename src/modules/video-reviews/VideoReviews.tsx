@@ -1,9 +1,13 @@
+import cn from "classnames";
 import { useState } from "react";
+import { Puff } from "react-loader-spinner";
+
 import { useAppSelector } from "../../store/hooks";
 
 export const VideoReviews = () => {
   const { data } = useAppSelector((state) => state.data);
   const [currentVideo, setCurrentVideo] = useState(0);
+  const [isVideoLoading, setIsVideoLoading] = useState(true);
 
   const videos = [
     "https://player.vimeo.com/video/958989546?h=d4f32ab887",
@@ -19,16 +23,17 @@ export const VideoReviews = () => {
       setCurrentVideo((prev) => {
         return prev === videos.length - 1 ? 0 : prev + 1;
       });
-
-      return;
+    } else {
+      setCurrentVideo((prev) => {
+        return prev === 0 ? videos.length - 1 : prev - 1;
+      });
     }
 
-    setCurrentVideo((prev) => {
-      return prev === 0 ? videos.length - 1 : prev - 1;
-    });
+    setIsVideoLoading(true);
   };
 
-  // add classes later
+  const handleVideoIsLoaded = () => setIsVideoLoading(false);
+
   return (
     <section className="video-reviews" id="video-reviews">
       <h2 className="title">{data.videoReviews.title}</h2>
@@ -39,13 +44,20 @@ export const VideoReviews = () => {
           onClick={() => handleVideoChange("prev")}
         />
 
+        {isVideoLoading ? (
+          <div className="loader">
+            <Puff color="#00BFFF" height={100} width={100} />
+          </div>
+        ) : null}
+
         <iframe
-          className="video-reviews__video"
-          width="760"
-          height="515"
+          className={cn("video-reviews__video", {
+            'loading': isVideoLoading,
+          })}
           src={videos[currentVideo]}
-          title="YouTube video player"
+          title="Vimeo video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          onLoad={handleVideoIsLoaded}
         ></iframe>
 
         <button
