@@ -32,6 +32,7 @@
 
 .slick-prev {
   left: -1% !important;
+  left: -10% !important;
 
   @include onTablet {
     left: -8% !important;
@@ -39,7 +40,7 @@
 }
 
 .slick-next {
-  right: 7% !important;
+  right: -2% !important;
 
   @include onTablet {
     right: 7px !important;

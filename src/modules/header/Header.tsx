@@ -13,10 +13,10 @@ export const Header = () => {
         <p className="header__text">{data.header.subtitle}</p>
 
         <a
-          href="https://t.me/traffcoin"
+          href="https://t.me/+4_5fcazDgBViN2Fi"
           target="_blank"
           rel="noreferrer"
-          className="header__button"
+          className="link-button"
         >
           {data.header.button}
         </a>

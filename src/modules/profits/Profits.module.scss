@@ -5,13 +5,14 @@
   align-items: center;
 
   &__image {
-    width: 65vw;
+    width: 100vw;
     height: 100vw;
 
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 50px;
 
     @include onBigTablet {
+      object-fit: contain;
       height: 90vw;
     }
 

@@ -1,19 +1,27 @@
 .more-reasons {
-  @include addPadding;
-  --columns: 4;  
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 
-  display: grid;
-  grid-template-columns: repeat(var(--columns), 1fr);
-  justify-items: center;
+  align-items: center;
 
-  grid-row-gap: 70px;
-
-  @include onTablet {
-    --columns: 6;
-  }
-
-  @include onBigTablet {
-    --columns: 12;
+  &__icons {
+    @include addPadding;
+    --columns: 4;  
+  
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    justify-items: center;
+  
+    grid-row-gap: 70px;
+  
+    @include onTablet {
+      --columns: 6;
+    }
+  
+    @include onBigTablet {
+      --columns: 12;
+    }
   }
 }
 
@@ -46,18 +54,6 @@
     }
   }
 
-  &:last-child {
-    grid-column: 2 / 4;
-  
-    @include onTablet {
-      grid-column: 3 / 5;
-    }
-  
-    @include onBigTablet {
-      grid-column: 4 / 10;
-    }
-  }
-
   &__icon {
     width: 120px;
     height: 120px;
@@ -70,7 +66,7 @@
       height: 200px;
     }
 
-    @for $icon from 1 through 9 {
+    @for $icon from 1 through 10 {
       &--#{$icon} {
         background-image: url('../../../public/images/more-reasons/more-reasons-#{$icon}.svg');
       }

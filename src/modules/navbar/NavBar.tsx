@@ -17,7 +17,7 @@ export const NavBar: React.FC<Props> = ({ setLanguage }) => {
       )}
 
       <section className="navbar">
-        <a href="https://t.me/traffcoin" target="_blank" rel="noreferrer">
+        <a href="https://t.me/+4_5fcazDgBViN2Fi" target="_blank" rel="noreferrer">
           <div className="icon-left" />
         </a>
 

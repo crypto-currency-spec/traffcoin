@@ -1,9 +1,12 @@
 import Slider from "react-slick";
+
 import { useAppSelector } from "../../store/hooks";
 
 export const Profits = () => {
   const { data } = useAppSelector((state) => state.data);
   const images = [
+    "images/profits/profit.jpeg",
+    "images/profits/profit.jpeg",
     "images/profits/profit.jpeg",
     "images/profits/profit.jpeg",
     "images/profits/profit.jpeg",
@@ -19,7 +22,7 @@ export const Profits = () => {
     infinite: true,
     nextArrow: (
       <div>
-        <div className="next-slick-arrow  next-slick-arrow--right" />
+        <div className="next-slick-arrow next-slick-arrow--right" />
       </div>
     ),
 
@@ -40,13 +43,21 @@ export const Profits = () => {
             <img
               className="profits__image"
               src={file}
-              loading="lazy"
               alt={`review-${i + 1}`}
               key={i}
             />
           ))}
         </Slider>
       </div>
+
+      <a
+        href="https://t.me/+4_5fcazDgBViN2Fi"
+        target="_blank"
+        rel="noreferrer"
+        className="link-button link-button--others"
+      >
+        {data.header.button}
+      </a>
     </section>
   );
 };
