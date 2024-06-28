@@ -5,13 +5,12 @@ import { useAppSelector } from "../../store/hooks";
 export const Profits = () => {
   const { data } = useAppSelector((state) => state.data);
   const images = [
-    "images/profits/profit.jpeg",
-    "images/profits/profit.jpeg",
-    "images/profits/profit.jpeg",
-    "images/profits/profit.jpeg",
-    "images/profits/profit.jpeg",
-    "images/profits/profit.jpeg",
-    "images/profits/profit.jpeg",
+    "images/profits/profit-1.png",
+    "images/profits/profit-2.png",
+    "images/profits/profit-3.png",
+    "images/profits/profit-4.png",
+    "images/profits/profit-5.png",
+    "images/profits/profit-6.png",
   ];
 
   const settings = {
