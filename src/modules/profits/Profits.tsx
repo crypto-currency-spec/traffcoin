@@ -34,7 +34,7 @@ export const Profits = () => {
 
   return (
     <section className="profits" id="profits">
-      <h2 className="title">{data.profits.title}</h2>
+      <h2 className="title profits__title">{data.profits.title}</h2>
 
       <div className="scroller">
         <Slider {...settings}>

@@ -6,6 +6,20 @@
 
   align-items: center;
 
+  &__title {
+    @media (min-width: 320px) {
+      margin-inline: 4.75vw;
+    }
+
+    @media (min-width: 400px) {
+      margin-inline: 13vw;
+    }
+
+    @media (min-width: 540px) {
+      margin-inline: unset;
+    }
+  }
+
   &__image {
     width: 100vw;
     height: 100vw;
