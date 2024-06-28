@@ -28,6 +28,9 @@ export interface InitialState {
     videoReviews: {
       title: string;
     };
+    profits: {
+      title: string;
+    };
     partners: {
       title: string;
     };
@@ -72,6 +75,9 @@ const initialState: InitialState = {
       title: "",
     },
     videoReviews: {
+      title: "",
+    },
+    profits: {
       title: "",
     },
     partners: {

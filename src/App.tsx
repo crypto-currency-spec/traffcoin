@@ -13,8 +13,10 @@ import { PaymentSystems } from './modules/payment-systems';
 import { Faq } from './modules/faq';
 import { Footer } from './modules/footer';
 import { loadText } from './languageConversion';
+import { Profits } from './modules/profits';
 
 function App() {
+  // CHANGE
   const [language, setLanguage] = useState<'eng' | null>(null);
   const dispatch = useAppDispatch();
 
@@ -48,6 +50,8 @@ function App() {
         <Reviews />
 
         <VideoReviews />
+
+        <Profits />
 
         <Partners />
 
