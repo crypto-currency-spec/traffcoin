@@ -1,4 +1,6 @@
 .profits {
+  @include addPadding;
+
   display: flex;
   flex-direction: column;
 

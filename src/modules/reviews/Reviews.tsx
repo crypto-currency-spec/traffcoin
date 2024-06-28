@@ -13,6 +13,7 @@ export const Reviews = () => {
     'images/reviews/review-7.jpeg',
     'images/reviews/review-8.jpeg',
     'images/reviews/review-9.jpeg',
+    'images/reviews/review-10.jpeg',
   ];
 
   return (
