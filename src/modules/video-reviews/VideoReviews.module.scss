@@ -33,8 +33,18 @@
     border: none;
     background-color: transparent;
 
+    z-index: 10;
+    
+    @media (max-width: 400px) {
+      margin-right: -10px;
+    }
+
     &--next {
       transform: rotate(180deg);
+
+      @media (max-width: 400px) {
+        margin-left: -10px;
+      }
     }
   }
 
