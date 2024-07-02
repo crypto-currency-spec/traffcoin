@@ -14,16 +14,6 @@ export const Reviews = () => {
     'images/reviews/review-8.jpg',
     'images/reviews/review-9.jpg',
     'images/reviews/review-10.jpg',
-    'images/reviews/review-11.jpeg',
-    'images/reviews/review-12.jpeg',
-    'images/reviews/review-13.jpeg',
-    'images/reviews/review-14.jpeg',
-    'images/reviews/review-15.jpeg',
-    'images/reviews/review-16.jpeg',
-    'images/reviews/review-17.jpeg',
-    'images/reviews/review-18.jpeg',
-    'images/reviews/review-19.jpeg',
-    'images/reviews/review-20.jpeg',
   ];
 
   return (
